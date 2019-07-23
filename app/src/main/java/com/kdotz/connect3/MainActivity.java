@@ -26,10 +26,10 @@ public class MainActivity extends AppCompatActivity {
             counter.setTranslationY(-1500);
 
             if (activePlayer == 0) {
-                counter.setImageResource(R.drawable.yellow);
+                counter.setImageResource(R.drawable.rainbow);
                 activePlayer = 1;
             } else {
-                counter.setImageResource(R.drawable.red);
+                counter.setImageResource(R.drawable.unicorn);
                 activePlayer = 0;
             }
 
@@ -42,9 +42,9 @@ public class MainActivity extends AppCompatActivity {
                     gameActive = false;
 
                     if (activePlayer == 1) {
-                        winner = getString(R.string.yellow);
+                        winner = getString(R.string.rainbow);
                     } else {
-                        winner = getString(R.string.red);
+                        winner = getString(R.string.unicorn);
                     }
 
                     Button playAgainButton = (Button) findViewById(R.id.playAgainButton);
